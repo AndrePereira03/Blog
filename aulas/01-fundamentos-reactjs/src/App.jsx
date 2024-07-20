@@ -18,7 +18,7 @@ export function App() {
             />
             <Post
               author = "Rodrigo Miranda"
-              content = "Estou cada dia melhor!"
+              content = "A gordura que tá na pele do frango escorre toda na máquina."
             />
             <Post
               author = "Germain Girndt"
@@ -26,7 +26,11 @@ export function App() {
             />
             <Post
               author = "Iandra Siqueira"
-              content = "Tô gorda!"
+              content = "Tô magra!"
+            />
+             <Post
+              author = "Anna Andréa"
+              content = "É claro que eu sei porque eu sou da área da saúde."
             /> 
         </main>
       </div>
