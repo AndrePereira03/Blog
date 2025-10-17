@@ -31,20 +31,26 @@ export function Post({ author, publishedAt, content }) {
     event.preventDefault();
 
     setComments([...comments, newCommentText]);
-  }
-
-  function handleNewCommentChange() {
-    setNewCommentText(event.target.value);
     setNewCommentText("");
   }
 
-  function deleteComment(comment) {
-    const commentsWithoutDeletedOne = comments.filter((comment) => {
-      return comment != commentsWithoutDeletedOne;
-    });
+  function handleNewCommentChange(event) {
+    event.target.setCustomValidity("");
+    setNewCommentText(event.target.value);
+  }
 
+  function handleNewCommentInvalid() {
+    event.target.setCustomValidity("Este campo é obrigatório!");
+  }
+
+  function deleteComment(commentToDelete) {
+    const commentsWithoutDeletedOne = comments.filter(
+      (comment) => comment !== commentToDelete
+    );
     setComments(commentsWithoutDeletedOne);
   }
+
+  const isNewCommentEmpty = newCommentText.length === 0;
 
   return (
     <article className={styles.post}>
@@ -86,9 +92,13 @@ export function Post({ author, publishedAt, content }) {
           placeholder="Deixe um comentário"
           value={newCommentText}
           onChange={handleNewCommentChange}
+          onInvalid={handleNewCommentInvalid}
+          required
         />
         <footer>
-          <button type="submit">Publicar</button>
+          <button type="submit" disabled={isNewCommentEmpty}>
+            Publicar
+          </button>
         </footer>
       </form>
 
