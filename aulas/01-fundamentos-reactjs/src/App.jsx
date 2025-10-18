@@ -21,7 +21,11 @@ const posts = [
         content:
           "Acabei de conversar com o meu irmão sobre boas práticas a nível de grandes empresas, foi uma conversa super produtiva! Também aprovei o portfólio dele e obriguei ele a trocar o conteúdo antigo desse projeto 😂. Vê o portifa do meu brother aí em baixo, vai!",
       },
-      { type: "link", content: "andrepereira.dev" },
+      {
+        type: "link",
+        content: "andrepereira.dev",
+        url: "https://andrepereira.dev",
+      },
     ],
     publishedAt: new Date("2024-07-23 21:31:56"),
   },

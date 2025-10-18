@@ -33,7 +33,7 @@ export function Comment({ content, onDeleteComment }) {
                 title="20 de julho às 20:37h"
                 dateTime="2023-07-20 20:36:56"
               >
-                Cerca de 1h atrás
+                agora
               </time>
             </div>
             <button onClick={handleDeleteComment} title="Deletar comentário">
