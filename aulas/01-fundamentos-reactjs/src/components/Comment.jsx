@@ -20,7 +20,7 @@ export function Comment({ content, onDeleteComment }) {
     <div className={styles.comment}>
       <Avatar
         hasBorder={false}
-        src="https://avatars.githubusercontent.com/u/52306002?v=4"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR81iX4Mo49Z3oCPSx-GtgiMAkdDop2uVmVvw&s"
         alt="Foto de avatar"
       />
 
@@ -28,12 +28,12 @@ export function Comment({ content, onDeleteComment }) {
         <div className={styles.commentContent}>
           <header>
             <div className={styles.authorAndTime}>
-              <strong>Germain Girndt</strong>
+              <strong>Usuário</strong>
               <time
                 title="20 de julho às 20:37h"
                 dateTime="2023-07-20 20:36:56"
               >
-                agora
+                Agora
               </time>
             </div>
             <button onClick={handleDeleteComment} title="Deletar comentário">

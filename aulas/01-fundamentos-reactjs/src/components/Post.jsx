@@ -10,7 +10,7 @@ import { useState } from "react";
 const comments = [1, 2];
 
 export function Post({ author, publishedAt, content }) {
-  const [comments, setComments] = useState(["Post legal"]);
+  const [comments, setComments] = useState(["👏👏👏"]);
 
   const [newCommentText, setNewCommentText] = useState("");
 
@@ -88,7 +88,7 @@ export function Post({ author, publishedAt, content }) {
       </div>
 
       <form onSubmit={handleCreateNewComment} className={styles.commentForm}>
-        <strong>Deixe seu feedback</strong>
+        <strong>Comentários</strong>
         <textarea
           name="comment"
           placeholder="Deixe um comentário"
