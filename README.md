@@ -1,7 +1,6 @@
 # **Blog Simples**
 
-Este projeto é um **Blog Simples** desenvolvido com o objetivo de **aprimorar conhecimentos em novas tecnologias** do ecossistema front-end moderno, como React e Vite.  
-A aplicação permite exibir publicações de forma dinâmica e organizada, servindo como base para experimentação e aprendizado.
+Desenvolvi um **Blog Simples** com o objetivo de **aprimorar conhecimentos em novas tecnologias** do ecossistema front-end moderno, como React e Vite. A aplicação permite exibir publicações de forma dinâmica e organizada, servindo como base para experimentação e aprendizado.
 
 ---
 
@@ -38,7 +37,7 @@ A aplicação permite exibir publicações de forma dinâmica e organizada, serv
 
 ## **Objetivo**
 
-O projeto foi criado com foco no aprendizado prático de conceitos modernos de desenvolvimento web, incluindo:
+Aprendizado prático de conceitos modernos de desenvolvimento web, incluindo:
 
 - Componentização e reuso de código;
 - Renderização condicional e mapeamento de listas;
